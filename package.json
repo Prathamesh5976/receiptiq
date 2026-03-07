@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "client": "cd client && pnpm dev",
-    "server": "cd server && pnpm dev",
-    "dev": "concurrently \"pnpm client\" \"pnpm server\""
+    "dev": "concurrently \"pnpm --prefix server dev\" \"pnpm --prefix client dev\""
   },
   "keywords": [],
   "author": "",
