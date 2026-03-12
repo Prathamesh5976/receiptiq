@@ -253,3 +253,5 @@ Returns: SSE stream — data: { text: string } | { done: true }
 
 **Prathamesh Kulkarni** — Full Stack AI Engineer  
 [LinkedIn](https://www.linkedin.com/in/prathamesh-kulkarni-a139631a7) · [GitHub](https://github.com/Prathamesh5976) · [Kydoscope](https://kydoscope.com)
+
+## Thanks
