@@ -71,7 +71,7 @@ export default function ChatPage() {
   };
 
   return (
-    <div className="flex flex-col h-[calc(100vh-4rem)]">
+    <div className="flex flex-col h-[calc(100vh-4rem)] pb-16 lg:pb-0">
       <h1 className="text-2xl font-bold mb-4">Ask About Your Expenses</h1>
 
       {/* Messages */}
