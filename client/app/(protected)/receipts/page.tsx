@@ -13,7 +13,9 @@ export default function ReceiptsPage() {
   const { data, isLoading, isError, refetch } = useQuery({
     queryKey: ["receipts"],
     queryFn: () =>
-      fetch("http://localhost:5000/api/receipts").then((res) => res.json()),
+      fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/receipts`).then((res) =>
+        res.json(),
+      ),
   });
 
   const handleFileExtract = async () => {
@@ -21,7 +23,7 @@ export default function ReceiptsPage() {
     setLoading(true);
     try {
       const base64 = await fileToBase64(file);
-      await fetch("http://localhost:5000/api/receipts/extract", {
+      await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/receipts/extract`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
